@@ -51,7 +51,14 @@ customers.csv     ──────►  stg_olist__customers  ─────�
 
 ## Lineage Graph
 
+### dbt lineage
 ![Lineage](images/lineage.png)
+
+### Silver layer (staging models) - Snowflake lineage
+![Silver lineage](images/silver_lineage.png)
+
+### Gold layer (marts) - Snowflake lineage
+![Gold lineage](images/gold_lineage.png)
 
 ---
 
@@ -238,4 +245,3 @@ This project taught me things that tutorials don't cover:
 - **Composite keys** - `order_id` alone is not always a primary key. Understanding why required reading the actual data
 - **`QUALIFY` in Snowflake** - more efficient than a subquery for deduplication within partitions
 - **Documentation is part of the model** - a column without a description is a column nobody will use correctly
-
