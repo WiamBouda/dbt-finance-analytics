@@ -215,9 +215,6 @@ Every column has a description and at least one test. Example from `fct_orders`:
 
 ## How to Run
 
-> **Note:** This project was developed in dbt Cloud during a 14-day trial. 
-> The full codebase was exported and versioned on GitHub at project completion.
-
 ```bash
 # Install packages
 dbt deps
