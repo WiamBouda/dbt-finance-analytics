@@ -4,15 +4,15 @@ This is a personal project I built to explore the modern data stack, specificall
 The goal was simple: take a real messy dataset, profile it properly, clean it, and build a Gold layer ready for BI - the way it would be done in a real data team.
 
 ---
+## At a Glance
 
-## Stack
-
-| Tool | Role |
+| | |
 |---|---|
-| **Snowflake** | Cloud data warehouse - Bronze layer |
-| **dbt Cloud** | Transformations, testing, documentation |
-| **dbt-utils** | Extended tests (accepted_range, unique_combination_of_columns) |
-| **SQL** | Data profiling before any transformation |
+| **Dataset** | 99,441 orders · 103,886 payments · 96,096 customers |
+| **Period** | 2016–2018 Brazilian e-commerce (Olist) |
+| **Stack** | dbt Cloud · Snowflake · dbt-utils · SQL |
+| **Tests** | 58 passing · 0 errors · 0 warnings |
+| **Models** | 3 staging · 2 fact tables · 1 dimension |
 
 ---
 
@@ -214,6 +214,9 @@ Every column has a description and at least one test. Example from `fct_orders`:
 ---
 
 ## How to Run
+
+> **Note:** This project was developed in dbt Cloud during a 14-day trial. 
+> The full codebase was exported and versioned on GitHub at project completion.
 
 ```bash
 # Install packages
